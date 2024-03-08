@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(248, 252, 211, 0.603);
+    font-size: 15pt;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    /*border: 1px solid red;*/
+    margin: auto auto;
+
+}
+input{
+    height: 120px;
+    font-size: 2rem;
+    width: 80%;
+    padding-left: 10%;
+
+}
+button.add{
+    width: 20%;
+    cursor: pointer;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+
+    padding-top: 40px;
+
+}
+
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(128, 128, 128, 0.664);
+    border-radius: 10px;
+}
+
+.item-icone{
+    text-align: center;
+    flex: 5%;
+    height: 150px;
+}
+.item-nome{
+    flex: 85%;
+    padding-left: 10px;
+    padding-bottom: 50px;
+
+
+
+    
+}
+.item-botao{
+    flex: 10%;
+    padding-bottom: 50px;
+
+
+}
+
+.delete{
+    background: red;
+    color: white;
+    border: none;
+    height: 100px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.item.clicado{
+    background: rgba(172, 255, 47, 0.479);
+}
+
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: gray;
+}
+
+footer{
+    text-align: center;
+    color: grey;
+    margin: auto auto;
+
+}
